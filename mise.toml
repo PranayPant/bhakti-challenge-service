@@ -1,0 +1,10 @@
+[tools]
+docker = "latest"
+
+[tasks.build]
+description = "Build the Docker image for the service"
+run = "docker build . -t bhakti-challenge-service"
+
+[tasks.start]
+description = "Start the service using Docker"
+run = "docker run --env-file .env -p 8000:8000 bhakti-challenge-service"
