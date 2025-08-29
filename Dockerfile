@@ -11,7 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source files
 COPY src/ ./src/
 COPY requirements.txt ./
-COPY gemini-live-api-service-account.secret.json ./
 
 EXPOSE 8000
 
